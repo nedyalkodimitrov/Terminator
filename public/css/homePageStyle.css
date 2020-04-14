@@ -9,12 +9,12 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bg-white{
+.container-color{
   background-color: #F1F4FFFF;
 }
 
 .homePage-header-image-holder {
-  padding-top: 55%;
+  padding-top: 47%;
   max-width: 100%;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   /*filter: blur(3px);*/
   /*-webkit-filter: blur(3px);*/
