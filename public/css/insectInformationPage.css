@@ -102,20 +102,48 @@
     width: 90%;
     position: relative;
     left: 50%;
+    height: 45%;
     transform: translate(-50%, -0%);
 }
-.insect-price-information-div {
-    margin-top: 0.8rem;
+.area-container{
+ min-height: auto;
 }
-.insect-price-information .last-image {
-    width: 93%;
+
+
+.information-card-text{
+    min-height:auto;
 }
-.insect-price-information h6 {
-    font-size: 1.3em;
+.insect--information h6 {
+    font-size: 2.3em;
 }
+
+.information-card {
+    box-sizing: border-box;
+    border: 2px solid #6C1009;
+    border-radius: 25px;
+    height: auto;
+ }
+
+.insect-information-header {
+    height: 45%;
+    text-align: center;
+    margin: auto auto;
+    align-self: center;
+    color:black;
+    border-bottom:1px solid red ;
+    width: 100%;
+    padding: 0.5rem;
+}
+.insect-information-header > p {
+    position: relative;
+    top: 22.5%;
+
+}
+
 
 .area {
     border: none;
     background-color:  #7E1412;
     color: white;
+    height: auto;
 }
