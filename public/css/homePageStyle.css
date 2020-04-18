@@ -166,6 +166,15 @@ body{
 /*insects containers*/
 .insects-container{
   background: #F1F4FFFF;
+
+}
+.insects-container hr {
+  background-color: #6C1009 ;
+  height: 0.5rem;
+}
+
+.insect-container {
+  margin-bottom: 0.7rem;
 }
 .insect-container > div{
   height: 100%;
@@ -178,35 +187,43 @@ body{
 
 .insect-text{
   word-break:break-word;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
+  padding:0;
 
 }
 .insect-container h6{
- font-size: 0.9rem;
+ font-size: 0.8rem;
   font-style: oblique;
 }
 .insect-information-button{
   border-radius: 22px;
-  border: 2px solid #ae2103;
+  border: 1px solid #ae2103;
   background-color: rgba(229,193,14,0.79);
-  color: black;
+  font-weight: bold ;
+  color: #ae2103;
   transition: 0.4s;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: auto;
   justify-content: center;
+  padding: 0.5em 1em;
+  margin-top: 0.8rem;
 }
 .insect-information-button:hover{
   background-color:white;
   color: black;
 }
 
-
-.insect-image {
+.insect-image-container {
   position: relative;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  padding-top: 65%;
+}
+.insect-image {
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 /*about us information charts*/
 
@@ -223,6 +240,7 @@ body{
   left: 50%;
   transform: translate(-50%, 0%);
   transition: 0.4s;
+  background-color: red;
 }
 
 /* Style the tab */

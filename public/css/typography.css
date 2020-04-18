@@ -6,7 +6,7 @@
 }
 
 html {
-    font: 10px/1.5  'Comfortaa', cursive; ;
+    font: 14px/1.5  'Comfortaa', cursive; ;
     font-weight: 400;
 }
 body, form, input, select, option, p, a, span, table,thead, tbody,th, table th  {
@@ -41,19 +41,19 @@ blockquote p:last-child{
 
 @media only screen and (min-width: 600px) {
     html {
-        font: 12px/1.5  'Comfortaa', cursive;;
+        font: 15px/1.5  'Comfortaa', cursive;;
     }
 }
 
 @media only screen and (min-width: 800px) {
     html {
-        font: 14px/1.5  'Comfortaa', cursive;;
+        font: 16px/1.5  'Comfortaa', cursive;;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     html {
-        font: 17px/1.5  'Comfortaa', cursive;;
+        font: 18px/1.5  'Comfortaa', cursive;;
     }
 }
 
@@ -65,5 +65,10 @@ blockquote p:last-child{
 @media only screen and (min-width: 1920px) {
     html {
         font: 28px/1.5 'Comfortaa', cursive;;
+    }
+}
+@media only screen and (min-width: 2220px) {
+    html {
+        font: 32px/1.5 'Comfortaa', cursive;;
     }
 }

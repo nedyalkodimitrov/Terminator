@@ -14,10 +14,11 @@ nav a:hover {
 nav li {
     margin: 0 0.3em;
 }
-nav a {
+nav li  a {
     color:black;
     text-transform: none;
     font-size: inherit;
+    font-size: 1rem;
 }
 
 .header-information  i, .mobile-app-header-line i {
@@ -91,7 +92,7 @@ nav a {
 }
 .dropdown-menu {
     display: block;
-    opacity: 0;
+    opacity: 1;
     transition: visibility 1s linear 0.3s, opacity 0.3s linear;
 }
 .dropdown-menu li {
