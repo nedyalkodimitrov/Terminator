@@ -17,15 +17,6 @@ class MainController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/hlebarki", name="hlebarki")
-     */
-    public function hlebarki()
-    {
-        return $this->render('main/hlebarki.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
-    }
 
     /**
      * @Route("/aboutUs", name="aboutUs")

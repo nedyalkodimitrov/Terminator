@@ -3,7 +3,8 @@
     position: relative;
     left: 50%;
     transform: translate(-50%, -0%);
-    width: 12%;
+    width: 70%;
+    width: 70%;
 }
 
 .phoneNumberInformation  .right-to-left-line, .phoneNumberInformation .left-to-right-line{
@@ -101,7 +102,12 @@
 .tab > p {
     padding: 1rem;
     line-height: 1.6;
+    
 
+}
+.tab > li{
+    width: 95%;
+    margin: auto;
 }
 /*insect price tabs*/
 
@@ -154,8 +160,9 @@ color: white;
 .information-card {
     box-sizing: border-box;
     border: 2px solid #6C1009;
-    border-radius: 15px;
+    border-radius: 0;
     height: auto;
+
  }
 
 

@@ -178,7 +178,7 @@ body{
 }
 .insect-container > div{
   height: 100%;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   transition: 0.4s ease all;
 }
 .insect-container > div:hover{
@@ -198,16 +198,16 @@ body{
 }
 
 .insect-information-button{
-  border-radius: 22px;
+  /*border-radius: 22px;*/
   border: 1px solid #ae2103;
   background-color: rgba(229,193,14,0.79);
   font-weight: bold ;
   color: #ae2103;
   transition: 0.4s;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: auto;
   justify-content: center;
-  padding: 0.5em 1em;
+  padding: 0.8em 2em;
   margin-top: 0.8rem;
   outline: none;
   outline-color: none;
@@ -314,6 +314,9 @@ body{
 @media only screen and (max-width: 992px) {
   .insect-container > div:hover{
     box-shadow: none;
+  }
+  .insect-image-container{
+    padding-top: 73%;
   }
 
 }
