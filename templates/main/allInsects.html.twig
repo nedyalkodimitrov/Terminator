@@ -1,0 +1,337 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{#    <link rel="stylesheet" href="{{ asset("css/components/promotion-card.css") }}">#}
+    <link rel="stylesheet" href="{{ asset("css/insectInformationPage.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/allInsectsPageStyle.css") }}">
+{% endblock %}
+{% block body %}
+    <div class="col-12 container p-0 m-0">
+     <h1 class="col-11 text-center p-0 mx-auto mt-3 mb-5">Всички видове вредители</h1>
+    </div>
+
+<div class="col-12 container p-0 m-0 d-lg-block d-md-block d-none">
+    <div class="col-12  m-0 mt-4 mb-5 mx-auto row promotion-cards-container  ">
+        <div class="col-2 m-0 p-0 my-auto">
+            <img src="{{ asset("images/insects/styrsheli.png") }}" alt="" class="insect-image">
+        </div>
+        <div class="col-2 mt-4 d-lg-flex d-md-none d-none p-0 m-0 row mx-auto">
+            <div class="col-12 information-card mx-auto col-12 p-0">
+                <div class=" col-12 insect-information-header ">
+                    <h4 class="my-auto m-0 p-0 ">
+                        Пръскане срещу <br>
+                        <span class="insect">стършели</span>
+                    </h4>
+                </div>
+                {#                    <hr class="col-10 m-0 p-0 mx-auto">#}
+                <div class="information-card-text text-center  ">
+                    <h5 class="pt-2 p-3 m-0">Квадратура</h5>
+                </div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class=" information-card-text text-center">
+                    <h5 class="pt-2 p-3 m-0">Цена</h5>
+                </div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="text-center m-0 p-0" > <h6 class="pt-2 p-3 m-0">Време за реакция</h6></div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="text-center p-0 m-0"><h6 class="pt-2 p-3 mt-auto m-0">Сертификат за препарата</h6></div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="col-12 p-0 text-center"><h6 class="pt-2 p-3 m-0">Инструктаж за превенция</h6></div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0 ">
+                <div class="col-12  image-container">
+                    <img src="{{ asset("images/houses/ot-30-do-50m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2 area-container p-0 ">
+                    <h6 class="area p-3 m-0 text-center">от 30 до 50&#13217;</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">30.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 p-0 mx-auto">
+                    <button class="btn col-12 "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0 ">
+                <div class="col-12 image-container">
+                    <img class="" src="{{ asset("images/houses/ot-51-do-70m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2 p-0  area-container">
+                    <h6 class="area p-2 text-center p-3 m-0">от 51 до 70&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">45.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 p-0 mx-auto">
+                    <button class="btn col-12  "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0">
+                <div class="col-12 image-container">
+                    <img src="{{ asset("images/houses/ot-71-do-100m2.png") }}" alt="">
+                </div>
+                <div class="col-12 p-0 mt-2 area-container">
+                    <h6 class="area p-2 text-center p-3 m-0">от 71 до 100&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">60.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 row p-0 mx-auto">
+                    <button class="btn col-12 "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 row mx-auto justify-content-center col-lg-2 col-md-6 insect-price-information">
+            <div class="col-11 p-0">
+                <div class="col-12 image-container">
+                    <img class="" src="{{ asset("images/houses/100m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2  p-0 area-container">
+                    <h6 class="area p-2  text-center p-3 m-0"> над 100&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">75.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 mx-auto p-0 row">
+                    <button class="btn col-12 text-center"><a href="" class="col-12 text-center container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr class="col-9 mx-auto">
+    <div class="col-12  m-0 mt-4 mb-5 mx-auto row promotion-cards-container  ">
+        <div class="col-12 ">
+            <div class="col-2 m-0 p-0 my-auto mx-auto">
+                <img src="{{ asset("images/insects/styrsheli.png") }}" alt="" class="insect-image">
+
+            </div>
+        </div>
+        <div class="col-3 mt-4 d-lg-flex d-md-none d-none p-0 m-0 row mx-auto">
+            <div class="col-12 information-card mx-auto col-12 p-0">
+                <div class=" col-12 insect-information-header ">
+                    <h4 class="my-auto m-0 p-0 ">
+                        Пръскане срещу <br>
+                        <span class="insect">стършели</span>
+                    </h4>
+                </div>
+                {#                    <hr class="col-10 m-0 p-0 mx-auto">#}
+                <div class="information-card-text text-center  ">
+                    <h5 class="pt-2 p-3 m-0">Квадратура</h5>
+                </div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class=" information-card-text text-center">
+                    <h5 class="pt-2 p-3 m-0">Цена</h5>
+                </div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="text-center m-0 p-0" > <h6 class="pt-2 p-3 m-0">Време за реакция</h6></div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="text-center p-0 m-0"><h6 class="pt-2 p-3 mt-auto m-0">Сертификат за препарата</h6></div>
+                <hr class="col-10 m-0 p-0 mx-auto">
+                <div class="col-12 p-0 text-center"><h6 class="pt-2 p-3 m-0">Инструктаж за превенция</h6></div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0 ">
+                <div class="col-12  image-container">
+                    <img src="{{ asset("images/houses/ot-30-do-50m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2 area-container p-0 ">
+                    <h6 class="area p-3 m-0 text-center">от 30 до 50&#13217;</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">30.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 p-0 mx-auto">
+                    <button class="btn col-12 "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0 ">
+                <div class="col-12 image-container">
+                    <img class="" src="{{ asset("images/houses/ot-51-do-70m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2 p-0  area-container">
+                    <h6 class="area p-2 text-center p-3 m-0">от 51 до 70&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">45.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 p-0 mx-auto">
+                    <button class="btn col-12  "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 col-lg-2 justify-content-center col-md-6 row mx-auto insect-price-information">
+            <div class="col-11 p-0">
+                <div class="col-12 image-container">
+                    <img src="{{ asset("images/houses/ot-71-do-100m2.png") }}" alt="">
+                </div>
+                <div class="col-12 p-0 mt-2 area-container">
+                    <h6 class="area p-2 text-center p-3 m-0">от 71 до 100&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">60.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 row p-0 mx-auto">
+                    <button class="btn col-12 "><a href=""  class="col-12 container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 mt-4 p-0 m-0 row mx-auto justify-content-center col-lg-2 col-md-6 insect-price-information">
+            <div class="col-11 p-0">
+                <div class="col-12 image-container">
+                    <img class="" src="{{ asset("images/houses/100m2.png") }}" alt="">
+                </div>
+                <div class="col-12 mt-2  p-0 area-container">
+                    <h6 class="area p-2  text-center p-3 m-0"> над 100&#13217</h6>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0">75.00лв</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none">48h</h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12">
+                    <h5 class="price text-center pt-2 p-3 m-0 d-lg-block d-md-none d-none"><i class="fas fa-check"></i></h5>
+                </div>
+                <div class="col-12 mx-auto p-0 row">
+                    <button class="btn col-12 text-center"><a href="" class="col-12 text-center container"><p class="p-0 m-0">Повикай унищожител</p></a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+    <div class="col-11 mx-auto row all-insects-container container p-0 m-0 d-lg-none d-md-none d-flex">
+       <h2 class="mt-1 mb-4 col-12">Пълзящи вредители</h2>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/kyrleji.png") }}" alt="">
+                <p>Кърлежи</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/dyrvenici.png") }}" alt="">
+                <p>Дървеници</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/hlabarki.png") }}" alt="">
+                <p>Хлебарки</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/bylhi.png") }}" alt="">
+                <p>Бълхи</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/mravki.png") }}" alt="">
+                <p>Мравки</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/hlabarki.png") }}" alt="">
+                <p>Стоножки</p>
+            </div>
+        </div>
+         <div class="insect m-0 p-0 col-4">
+            <div class="col-11 p-0 mx-auto">
+                <img src="{{ asset("images/insects/hlabarki.png") }}" alt="">
+                <p>Паяци</p>
+            </div>
+        </div>
+        <div class="insect m-0 p-0 col-4">
+            <div class="col-11 c p-0 mx-auto">
+                <img src="{{ asset("images/insects/hlabarki.png") }}" alt="">
+                <p>Гъсеници</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

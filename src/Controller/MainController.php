@@ -27,4 +27,13 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+    /**
+     * @Route("/allInsects", name="allInsects")
+     */
+    public function allInsects()
+    {
+        return $this->render('main/allInsects.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }

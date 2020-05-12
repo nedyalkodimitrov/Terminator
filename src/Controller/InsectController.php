@@ -43,5 +43,23 @@ class InsectController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+    /**
+     * @Route("/ant", name="ant")
+     */
+    public function ant()
+    {
+        return $this->render('insects\ant.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    /**
+     * @Route("/mosquitoes", name="mosquitoes")
+     */
+    public function mosquitoes()
+    {
+        return $this->render('insects\mosquitoes.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 
 }

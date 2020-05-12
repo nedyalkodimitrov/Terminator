@@ -130,19 +130,23 @@
 }
 
 .insect-price-information button{
-    background-color: rgba(126, 20, 18, 0.68);
-    border: 1px solid #7E1412;
-    color: white;
+    background-color: transparent;
+    border: 3px solid #7E1412;
+    color: black;
     border-radius:0;
     transition: 0.3s ease all;
-    padding: 1em;
+    padding: 0.8em;
+    font-size: 1.05em;
+    font-weight: 400;
+    margin-top: 0.5em;
 }
 
 .insect-price-information button:hover{
+    color: white;
     background-color: rgba(126, 20, 18,1);
 }
 .insect-price-information button > a {
-color: white;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -180,6 +184,7 @@ color: white;
     bottom: 0;
     position: absolute;
     transform: translate(0%, -50%);
+
 }
 
 
@@ -188,4 +193,33 @@ color: white;
     background-color:  #7E1412;
     color: white;
     height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .area {
+        background-color: white;
+        color: black;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+    .area > h4 {
+        color: black;
+    }
+
+    .insect-price-information button{
+        background-color: transparent;
+        color: black;
+        padding: 0.8em;
+        font-size: 1.05em;
+        font-weight: 500;
+        margin-top: 0.5em;
+    }
+
+    .insect-price-information button:hover{
+        background-color: rgba(126, 20, 18,1);
+        color: white;
+    }
+
+
+
 }

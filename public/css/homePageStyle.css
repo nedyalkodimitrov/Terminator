@@ -212,6 +212,7 @@ body{
   outline: none;
   outline-color: none;
   text-decoration: none;
+  height:3rem;
 }
 
 .insect-information-button:focus{
